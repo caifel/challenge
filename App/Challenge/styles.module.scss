@@ -1,16 +1,16 @@
 .container {
-    padding: 10px 0;
+	padding: 10px 0;
 }
 .actionBar {
 	align-items: center;
 	display: flex;
-    padding: 0 30px;
+	padding: 0 30px;
 	label {
 		font-size: 16px;
 		font-weight: bold;
 	}
 	.input {
-        flex: 1;
+		flex: 1;
 		font-size: 18px;
 		height: 48px;
 		padding: 3px 10px;
@@ -31,17 +31,23 @@
 		border-bottom: 1px solid lightgray;
 		height: 48px;
 		padding: 0 30px;
+		strong {
+			flex: 1;
+		}
+		span {
+			margin-left: 10px;
+		}
 	}
 }
 .noData {
-    margin-top: 20px;
-    color: grey;
-    font-size: 20px;
-    text-align: center;
-    border-top: 1px solid lightgray;
-    padding-top: 10px;
-    p {
-        margin-top: 10px;
-        margin-bottom: 0;
-    }
+	margin-top: 20px;
+	color: grey;
+	font-size: 20px;
+	text-align: center;
+	border-top: 1px solid lightgray;
+	padding-top: 10px;
+	p {
+		margin-top: 10px;
+		margin-bottom: 0;
+	}
 }

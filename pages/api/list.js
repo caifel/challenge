@@ -1,11 +1,10 @@
-const list = ["Sicilian", "French", "Deutch", "Slav"];
+import { countries } from "../../mockData/countries";
+import { search } from "../../utils/search";
 
 export default function handler(req, res) {
 	const searchText = (req.query.text || "").toLowerCase().trim();
 	if (searchText) {
-		const result = list.filter(
-			(item) => item.toLowerCase().indexOf(searchText) !== -1
-		);
+		const result = search(countries, searchText);
 		return res.status(200).json({ result });
 	}
 	return res.status(200).json({ result: [] });

@@ -40,7 +40,10 @@ const Challenge = () => {
 		return (
 			<ul className={styles.listContainer} key="list">
 				{list.map((item, index) => (
-					<li key={`item-${index}`}>{item}</li>
+					<li key={`item-${index}`}>
+                        <strong>{item.code}</strong>
+                        <span>{item.name}</span>
+                    </li>
 				))}
 			</ul>
 		);
